@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://najkkig008ml"]
+
+[ext_resource type="Script" uid="uid://da86kvrf0m5kl" path="res://Asset/demo.gd" id="1_buncw"]
+[ext_resource type="PackedScene" uid="uid://b2ytcx4jasl5e" path="res://Asset/Walking.tscn" id="1_h3pje"]
+[ext_resource type="PackedScene" uid="uid://cpxwknqesf72f" path="res://Asset/Base.glb" id="3_tdyfk"]
+
+[sub_resource type="Environment" id="Environment_tdyfk"]
+background_mode = 1
+background_color = Color(0.537498, 0.721164, 0.891516, 1)
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_buncw")
+
+[node name="Walking" parent="." instance=ExtResource("1_h3pje")]
+
+[node name="Walking2" parent="." instance=ExtResource("1_h3pje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.91394, 0, 0)
+
+[node name="Walking3" parent="." instance=ExtResource("1_h3pje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.1252, 0, 0)
+
+[node name="Walking4" parent="." instance=ExtResource("1_h3pje")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16.6586, 0.427043, 0.00757217)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.53933, 5.04201, 15.7836)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.07548, 18.1125, 14.5066)
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tdyfk")
+
+[node name="Root Scene" parent="." instance=ExtResource("3_tdyfk")]
+transform = Transform3D(13.43, 0, 0, 0, -0.42, 0, 0, 0, 17.7744, 7, 0.644932, 4)
