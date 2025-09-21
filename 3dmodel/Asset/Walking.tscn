@@ -497,18 +497,6 @@ _data = {
 
 [node name="Walking" type="Node3D"]
 
-[node name="Camera" type="Camera3D" parent="."]
-transform = Transform3D(68.5921, -32.4013, 65.1558, 8.9407e-06, 89.5396, 44.5271, -72.7676, -30.5421, 61.417, 7.35889, 4.95831, 6.92579)
-fov = 22.8952
-near = 0.1
-far = 100.0
-
-[node name="Light" type="OmniLight3D" parent="."]
-transform = Transform3D(-0.290865, -0.771101, 0.566393, -0.055189, 0.604525, 0.794672, -0.955171, 0.199884, -0.218391, -15.7613, 5.90386, -1.00545)
-light_energy = 1000.0
-shadow_enabled = true
-omni_range = 4096.0
-
 [node name="GeneralSkeleton" type="Skeleton3D" parent="."]
 unique_name_in_owner = true
 motion_scale = 3.83896
